@@ -35,8 +35,7 @@ vector< vector<int> > pros2(vector<int>&b, int & n)
 {
     int bsize = b.size();
     vector< vector<int> > bang;
-   // vector<int> x (10,1); 10 so voi gia tri 1
-    //print(x);
+ 
     bang.assign(bsize, vector<int> (bsize,0));
     //for (vector<int> U: bang) {print(U);};
     for (int i = 0; i<bsize;i++)
@@ -137,7 +136,6 @@ int main()
         print(u);
     }*/
     pros5(n,bsize,check,beauty);
-    cout<<"final ans:\n";
     cout<<"so tap dep la "<< beauty.size() + 2<<endl;
     cout <<1 << endl;
      for(set<int> u : beauty)
