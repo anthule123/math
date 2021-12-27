@@ -66,7 +66,6 @@ int pros3(set<int>&a, int n,int bsize, map< set<int>,int>& check)
 }
 void pros4(set<int> & temp,int n,int bsize, map<set<int>,int> & check, vector<set<int> > & beauty)
 {
-    
     while(check[temp]!=Green && check[temp]!=green)
     {
         if(pros3(temp,n,bsize,check) ==0)
@@ -101,7 +100,7 @@ int main()
     printf("Hello World\n");
     
     vector<int> B;
-    int n = 71;
+    int n = 105;
     //B1: tim cac so nguyen to cn voi a, goi la day B
     B = pros1(n);
     //print(B);
