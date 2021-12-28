@@ -38,8 +38,9 @@ void pros4(set<int> & temp,int n,int bsize, map<set<int>,int> & check, vector<se
    {
        int m = tem.size();
        for (int i = tro;i<m;i++)
-          for(int j = 0;j<=i;j++)
-          {
+         { 
+           for(int j = 0;j<=i;j++)
+           {
               int x = (tem[i]*tem[j])%n;
               if(x==1) continue;
               if(temp.count(x)==0)
@@ -49,6 +50,8 @@ void pros4(set<int> & temp,int n,int bsize, map<set<int>,int> & check, vector<se
                   tem.push_back(x);
               }
               if(check[temp]!=0) break;
+           }
+            if(check[temp]!=0) break;
           }
         tro = m;
         if(check[temp]!=0) break;
