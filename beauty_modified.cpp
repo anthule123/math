@@ -29,7 +29,6 @@ void print(tap& a)
     cout << endl;
 }
 
-
 void pros4(set<int> & temp,int n,int bsize, map<set<int>,int> & check, vector<set<int> > & beauty)
 {
    vector<int> tem;
