@@ -11,7 +11,7 @@ My ans:
    
    Kết quả:
    ![kq105](https://user-images.githubusercontent.com/29473579/147655173-52be3557-a303-4e20-a5e9-a02a37a0b098.png)
-Quá trình giải: mình không nghĩ ra ý tưởng ngay từ đầu mà mình bắt đầu xử lí những câu hỏi ở level thấp hơn.
+Quá trình giải: mình không nghĩ ra ý tưởng ngay từ đầu mà mình bắt đầu bằng việc xử lí những câu hỏi ở level thấp hơn.
 
 Level 1: Implement in C++
 
@@ -42,8 +42,11 @@ Level 2: Kiểm tra xem 1 tập hợp có là tập con đẹp ko.
             C1: Làm như ở bài 1 (nhưng phải thêm cái (u*v) vào)  hữu hạn lần đến khi ko còn phần tử mới nữa.
                  Tốn O(n^3*log(n)).
             C2: Ta xếp các phần tử của A thành dãy, giả sử là a1,a2,a3,a4.
-                   Ta cho con trỏ chạy từ 1. Ta sẽ kiểm tra các bộ (a_trỏ * phần tử đứng trước nó) :  a_trỏ * a_1, a_trỏ *a_2,.... a_trỏ*a_trỏ, xem có phần tử nào mới ko.
-                   Nếu có, cho vào vị trí cuối trong dãy. Cứ thế làm đến khi trỏ = độ dài của tập con.
+                   Ta cho con trỏ chạy từ 1. Ta sẽ kiểm tra các bộ (a_trỏ * phần tử đứng trước nó) : 
+                            a_trỏ * a_1, a_trỏ *a_2,.... a_trỏ*a_trỏ, xem có phần tử nào mới ko.
+                           Nếu có, cho vào vị trí cuối trong dãy.
+                  Cứ thế làm đến khi trỏ = độ dài của tập con.
+                 Tốn O(n^2*log(n)). 
                    
 Level 3: Từ tập con {a1},{a2},... với a_i nguyên tố cnhau với n, tìm tập con đẹp sinh ra bởi chúng.
 
@@ -53,6 +56,7 @@ Level 3: Từ tập con {a1},{a2},... với a_i nguyên tố cnhau với n, tìm
                1. Chưa kiểm tra
                2. Đã kiểm tra, đẹp
                3. Đã kiểm tra, chưa đẹp.
+            
             Ta cứ tiếp tục quá trình như ở Level 2, bài 2, khi nào gặp tập đã kiểm tra thì ta dừng lại. Kết thúc, ta tô màu "đã kiểm tra, đẹp" vào
             tập cuối cùng.
             
