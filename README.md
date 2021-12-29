@@ -46,6 +46,7 @@ Level 2: Kiểm tra xem 1 tập hợp có là tập con đẹp ko.
                    Nếu có, cho vào vị trí cuối trong dãy. Cứ thế làm đến khi trỏ = độ dài của tập con.
                    
 Level 3: Từ tập con {a1},{a2},... với a_i nguyên tố cnhau với n, tìm tập con đẹp sinh ra bởi chúng.
+
             Để tránh việc ta đã kiểm tra xong tập A rồi mà ta lại kiểm tra tập A lần nữa, ta dùng 1 cấu trúc dữ liệu để đánh dấu lại.
             Trong C++, có thể dùng map.
             A có các trường hợp:
@@ -54,6 +55,7 @@ Level 3: Từ tập con {a1},{a2},... với a_i nguyên tố cnhau với n, tìm
                3. Đã kiểm tra, chưa đẹp.
             Ta cứ tiếp tục quá trình như ở Level 2, bài 2, khi nào gặp tập đã kiểm tra thì ta dừng lại. Kết thúc, ta tô màu "đã kiểm tra, đẹp" vào
             tập cuối cùng.
+            
 Level 4: Tiếp tục tìm các tập con đẹp mà sinh bởi nhiều hơn 1 phần tử
         
         Ta thấy mình có thể tận dụng câu hỏi ở Level 3, bằng cách ghép các tập con đẹp đó rồi kiểm tra theo cách ở level 2 (bài 2).
