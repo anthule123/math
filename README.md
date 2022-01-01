@@ -9,7 +9,7 @@ My ans:
    
    Thời gian chạy ra kết quả với n = 3 đến 110: ở file "thời gian"
    
-   Kết quả: Biểu đồ mối liên hệ giữa n và số nhóm con của nhóm $Z^x_n$. Với n từ 3 đến 105.
+   Kết quả: Biểu đồ mối liên hệ giữa n và số nhóm con của nhóm Z^x_n. Với n từ 3 đến 105.
             Dùng Matlab để vẽ đồ thị.
   
    ![kq105](https://user-images.githubusercontent.com/29473579/147655173-52be3557-a303-4e20-a5e9-a02a37a0b098.png)
