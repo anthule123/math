@@ -1,4 +1,4 @@
-# Lập trình toán
+# math1
 ![cau hoi](https://user-images.githubusercontent.com/29473579/147653652-2572cbd3-c55b-4148-87f4-ac656a96e215.jpg)
 
 My ans:
